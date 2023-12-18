@@ -11,27 +11,10 @@ import { LuBookMarked } from "react-icons/lu";
 import { HiOutlineTrophy } from "react-icons/hi2";
 
 import "swiper/css";
-import Link from "next/link";
 
 const Services = () => {
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    const href = e.currentTarget.href;
-    const taretId = href.replace(/.*\#/, "");
-    const elem = document.getElementById(taretId);
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-    // Update the class name of the clicked link
-    const links = document.querySelectorAll(".nav-link");
-    links.forEach((link) => {
-      link.classList.remove("active");
-    });
-    e.currentTarget.classList.add("active");
-  };
 
   return (
     <section className="dark:bg-[#171717] bg-[#F7F7F7] lg:px-20 md:px-12 px-3 pb-16">
@@ -42,27 +25,18 @@ const Services = () => {
       </Reveal>
 
       <Reveal>
-        <div className="flex lg:flex-row flex-col gap-10 mt-16">
-          <div className="my-auto flex-1">
-            <h4 className="text-dark dark:text-white md:text-4xl text-2xl font-medium tracking-wide md:leading-[2.9rem] leading-[2.2rem]">
-              Tailored journeys for the excited traveler: adventure, culture,
-              unforgettable moments.
-            </h4>
-          </div>
-          <div className="flex-1 space-y-2 my-auto">
-            <p className="text-gray mb-6">
+        <div className="flex lg:flex-row flex-col gap-10 mt-16 h-full">
+          <h4 className="text-dark dark:text-white md:text-4xl text-2xl font-medium tracking-wide md:leading-[2.9rem] leading-[2.2rem]">
+            Tailored journeys for the excited traveler: adventure, culture,
+            unforgettable moments.
+          </h4>
+          <div className="h-auto">
+            <p className="text-gray mb-10">
               Crafting personalized journeys that blend adventure and culture,
               our agency invites the excited traveler to explore unforgettable
               moments. Join us in curating experiences that resonate with your
               unique interests and passions.
             </p>
-            <Link
-              href="/about#services"
-              onClick={handleScroll}
-              className="btn bg-gradient bg-gradient-hover"
-            >
-              Discover
-            </Link>
           </div>
         </div>
       </Reveal>
