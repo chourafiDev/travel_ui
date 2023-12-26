@@ -28,6 +28,7 @@ import img4 from "/public/assets/imgs/img4.jpg";
 import img5 from "/public/assets/imgs/img5.jpg";
 
 import imageCities from "/public/assets/imgs/cities.svg";
+import notFoundImg from "/public/assets/imgs/404.png";
 
 export {
   like,
@@ -55,4 +56,5 @@ export {
   img3,
   img4,
   img5,
+  notFoundImg,
 };
