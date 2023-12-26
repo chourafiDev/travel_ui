@@ -2,6 +2,11 @@ import { america, asia, europe, morocco, southAfrica } from "@/utils/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Western Europe",
+};
 
 const page = () => {
   return (

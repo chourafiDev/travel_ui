@@ -1,7 +1,12 @@
 import Accordion from "@/components/accordion/Accordion";
 import BottomContact from "@/components/ui/BottomContact";
 import Reveal from "@/components/ui/Reveal";
+import { Metadata } from "next";
 import { BsQuestionLg } from "react-icons/bs";
+
+export const metadata: Metadata = {
+  title: "Elite Travel | faq",
+};
 
 const page = () => {
   return (

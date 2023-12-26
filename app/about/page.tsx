@@ -3,6 +3,11 @@ import BottomContact from "@/components/ui/BottomContact";
 import Services from "@/components/elements/Services";
 import Divider from "@/components/ui/Divider";
 import Map from "@/components/elements/Map";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Elite Travel | About",
+};
 
 const page = () => {
   return (

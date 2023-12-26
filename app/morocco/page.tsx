@@ -2,6 +2,11 @@ import { america, asia, europe, morocco, southAfrica } from "@/utils/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Morocco",
+};
 
 const page = () => {
   return (
@@ -56,7 +61,12 @@ const page = () => {
           className="bg-white rounded-4 dark:bg-dark-2 p-3 shadow-xl shadow-gray/10 dark:shadow-black/20"
         >
           <div className="w-full h-[200px] relative">
-            <Image src={america} fill className="object-fill rounded-4" alt="about" />
+            <Image
+              src={america}
+              fill
+              className="object-fill rounded-4"
+              alt="about"
+            />
           </div>
           <div className="mt-4 flex justify-between items-center">
             <p className="text-dark dark:text-white font-medium text-lg">
@@ -72,7 +82,12 @@ const page = () => {
           className="bg-white rounded-4 dark:bg-dark-2 p-3 shadow-xl shadow-gray/10 dark:shadow-black/20"
         >
           <div className="w-full h-[200px] relative">
-            <Image src={asia} fill className="object-fill rounded-4" alt="about" />
+            <Image
+              src={asia}
+              fill
+              className="object-fill rounded-4"
+              alt="about"
+            />
           </div>
           <div className="mt-4 flex justify-between items-center">
             <p className="text-dark dark:text-white font-medium text-lg">
@@ -88,7 +103,12 @@ const page = () => {
           className="bg-white rounded-4 dark:bg-dark-2 p-3 shadow-xl shadow-gray/10 dark:shadow-black/20"
         >
           <div className="w-full h-[200px] relative">
-            <Image src={southAfrica} fill className="object-fill rounded-4" alt="about" />
+            <Image
+              src={southAfrica}
+              fill
+              className="object-fill rounded-4"
+              alt="about"
+            />
           </div>
           <div className="mt-4 flex justify-between items-center">
             <p className="text-dark dark:text-white font-medium text-lg">
@@ -104,7 +124,12 @@ const page = () => {
           className="bg-white rounded-4 rounded-4 dark:bg-dark-2 p-3 shadow-xl shadow-gray/10 dark:shadow-black/20"
         >
           <div className="w-full h-[200px] relative">
-            <Image src={europe} fill className="object-fill rounded-4" alt="about" />
+            <Image
+              src={europe}
+              fill
+              className="object-fill rounded-4"
+              alt="about"
+            />
           </div>
           <div className="mt-4 flex justify-between items-center">
             <p className="text-dark dark:text-white font-medium text-lg">

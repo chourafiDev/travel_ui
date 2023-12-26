@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import { HiChevronRight } from "react-icons/hi";
+
+export const metadata: Metadata = {
+  title: "Elite Travel | Privacy Policy",
+};
 
 export default async function Page() {
   return (

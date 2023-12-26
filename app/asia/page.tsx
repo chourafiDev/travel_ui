@@ -1,7 +1,12 @@
 import { america, asia, europe, morocco, southAfrica } from "@/utils/assets";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
+
+export const metadata: Metadata = {
+  title: "Asia",
+};
 
 const page = () => {
   return (

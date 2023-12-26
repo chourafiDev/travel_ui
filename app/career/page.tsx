@@ -8,6 +8,11 @@ import Reveal from "@/components/ui/Reveal";
 import Services from "@/components/elements/Services";
 import Team from "@/components/elements/Team";
 import Banner3 from "@/components/elements/Banner-3";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Elite Travel | Career",
+};
 
 const Page = () => {
   return (
