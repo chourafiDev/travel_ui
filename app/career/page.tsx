@@ -1,34 +1,26 @@
-"use client";
-
 import BottomContact from "@/components/ui/BottomContact";
 import Divider from "@/components/ui/Divider";
-import ParallaxText from "@/components/ui/ParallaxText";
+// import ParallaxText from "@/components/ui/ParallaxText";
 import Reveal from "@/components/ui/Reveal";
 
 import Services from "@/components/elements/Services";
 import Team from "@/components/elements/Team";
 import Banner3 from "@/components/elements/Banner-3";
 import { Metadata } from "next";
+import SliderText from "@/components/career/SliderText";
 
 export const metadata: Metadata = {
   title: "Elite Travel | Career",
 };
 
-const Page = () => {
+const page = () => {
   return (
     <main>
       <Banner3 />
 
-      <Reveal>
-        <section className="relative pb-24">
-          <ParallaxText baseVelocity={-5}>
-            <p className="flex gap-2 mr-8 font-extrabold text-[35px]">
-              <span className="text-stroke text-dark">Elite</span>
-              <span className="text-gradient">Travel</span>
-            </p>
-          </ParallaxText>
-        </section>
-      </Reveal>
+      <div className="mb-20">
+        <SliderText />
+      </div>
 
       <div className="flex justify-center mb-6">
         <Divider />
@@ -47,4 +39,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
