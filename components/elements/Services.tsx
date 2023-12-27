@@ -24,22 +24,25 @@ const Services = () => {
         </h1>
       </Reveal>
 
-      <Reveal>
-        <div className="flex lg:flex-row flex-col gap-10 mt-16 h-full">
+      <div className="flex lg:flex-row flex-col gap-10 mt-16 h-full">
+        <Reveal>
           <h4 className="text-dark dark:text-white md:text-4xl text-2xl font-medium tracking-wide md:leading-[2.9rem] leading-[2.2rem]">
             Tailored journeys for the excited traveler: adventure, culture,
             unforgettable moments.
           </h4>
-          <div className="h-auto">
+        </Reveal>
+
+        <div className="h-auto">
+          <Reveal>
             <p className="text-gray mb-10">
               Crafting personalized journeys that blend adventure and culture,
               our agency invites the excited traveler to explore unforgettable
               moments. Join us in curating experiences that resonate with your
               unique interests and passions.
             </p>
-          </div>
+          </Reveal>
         </div>
-      </Reveal>
+      </div>
 
       <div id="services">
         <Reveal>

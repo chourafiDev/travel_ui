@@ -1,7 +1,7 @@
 import { useState, useEffect, FC } from "react";
 import anime from "animejs";
 import Image from "next/image";
-import { lightLogo } from "@/utils/assets";
+import { darkLogo, lightLogo } from "@/utils/assets";
 
 interface SplashScreenProps {
   finishingLoading: any;
@@ -55,10 +55,17 @@ const SplashScreen: FC<SplashScreenProps> = ({ finishingLoading }) => {
   return (
     <div
       // isMounted={isMounted}
-      className="flex h-screen items-center justify-center bg-primary"
+      className="flex h-screen items-center justify-center bg-gradient"
     >
       {/* SplashScreen */}
-      <Image id="logo" src={lightLogo} alt="logo" width={200} height={100} />
+      <Image
+        id="logo"
+        src={darkLogo}
+        alt="logo"
+        width={200}
+        height={100}
+        className="move-updown"
+      />
     </div>
   );
 };
