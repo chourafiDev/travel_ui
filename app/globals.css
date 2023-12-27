@@ -206,3 +206,16 @@ html {
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
 }
+
+.move-updown {
+  animation: updown-animation 0.5s linear infinite alternate;
+}
+
+@keyframes updown-animation {
+  0% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
