@@ -37,8 +37,8 @@ const ContactUs: FC<ContactUsProps> = ({ handleCloseModal, isOpen }) => {
           leaveTo="opacity-0 scale-95"
         >
           <div className="fixed inset-0 flex items-center justify-center p-4 z-50">
-            <Dialog.Panel className="relative w-full lg:max-w-[60%] max-w-[100%] bg-white dark:bg-dark-3 dark:border dark:border-gray/10 p-2 md:p-6">
-              <div className="flex gap-10">
+            <Dialog.Panel className="relative rounded-4 w-full lg:max-w-[60%] max-w-[100%] bg-white dark:bg-dark-3 dark:border dark:border-gray/10 p-2 md:p-6">
+              <div className="md:flex md:gap-10 block">
                 <div className="space-y-4">
                   <div className="space-y-1 mb-8">
                     <h3 className="text-dark dark:text-white font-medium text-[19px] md:text-[22px]">
@@ -106,7 +106,7 @@ const ContactUs: FC<ContactUsProps> = ({ handleCloseModal, isOpen }) => {
 
               <div
                 onClick={handleCloseModal}
-                className="flex items-center justify-center w-7 h-7 bg-gradient absolute top-2 right-2 md:top-7 md:right-7 cursor-pointer"
+                className="flex rounded-4 items-center justify-center w-7 h-7 bg-gradient absolute top-2 right-2 md:top-7 md:right-7 cursor-pointer"
               >
                 <IoMdClose className="text-white" />
               </div>
