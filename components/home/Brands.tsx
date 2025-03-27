@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 const Brands = () => {
   return (
     <div className="lg:px-20 md:px-12 px-3 pb-32 dark:bg-[#171717] bg-[#F7F7F7]">
-      <h3 className="text-dark text-center text-2xl font-semibold mb-12">
+      <h3 className="text-dark dark:text-white text-center text-2xl font-semibold mb-12">
         We’re recommended by:
       </h3>
 
